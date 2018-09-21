@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <style>
+   .alert{
+       display: none;
+   }
+   .pp{
+     position: relative;
+       left: 400px;
+       top: 150px;
+       width: 40%;
+       background-color:silver;
+      }
+      qq.{
+        margin-left: 100px;
+      }
+  
+  </style>
+</head>
+<body style="background-color: whitesmoke;">
+  <div class="pp">
+  <h1 style="color: blue">Please Submit Feedback</h1><hr>
+  
+  <div class="alert">Your feedback has been sent.</div>
+  <form id="contactForm">
+    <p>
+      <label>Enter name</label>
+      <input type="text" name="name" id="name">
+    </p>
+    <p>
+      <label>Enter Email </label>
+      <input type="text" name="email" id="email" class="qq">
+    </p>
+    <p>
+      <label>Phone Number</label>
+      <input type="text" name="phone" id="phone">
+    </p>
+    <p>
+      <label>Feedback</label>
+      <textarea name="message" rows="5" id="message"></textarea>
+    </p>
+    <p align="center">
+      <button  type="submit">Submit</button>
+    </p>
+  </form>
+
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+  <script src="main.js"></script></div>
+</body>
+</html>
